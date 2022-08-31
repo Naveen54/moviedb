@@ -1,8 +1,23 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
+import { OutlineButton } from '../Components/button/Button'
+import HeroSlide from '../Components/hero-slide/HeroSlide'
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <>
+    <HeroSlide/>
+    <div className="container">
+      <div className="section mb-3">
+        <div className="section__header mb-2">
+          <h2>Trending Movies</h2>
+          <Link to='/movie'>
+            <OutlineButton className='small'>View More</OutlineButton>
+          </Link>
+        </div>
+      </div>
+    </div>
+    </>
   )
 }
 
