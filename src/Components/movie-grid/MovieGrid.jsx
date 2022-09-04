@@ -131,7 +131,7 @@ const MovieSearch  = props =>{
         <div className="movie-search">
             <Input
             type="text"
-            placeholder={`Search for ${category[props.category] == 'movie'? `Movie`:`TV Series`}`}
+            placeholder={`Search for ${category[props.category] === 'movie'? `Movie`:`TV Series`}`}
             value={keyword}
             onChange={(e)=>setKeyword(e.target.value)}
              />
