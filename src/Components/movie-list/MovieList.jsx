@@ -41,7 +41,7 @@ useEffect(() => {
   }
   getList()
   
-}, [items,props.category,props.id,props.type])
+}, [])
   return (
     <div className="movie-list">
         <Swiper
