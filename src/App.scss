@@ -104,8 +104,8 @@ iframe{
   -webkit-background-clip: text;
   color: transparent;
   animation-name: scaling;
-  animation-duration: 1s;
-  animation-delay: 2s;
+  animation-duration: 2s;
+  animation-delay: 3s;
   animation-fill-mode: forwards;
 }
 .text-fill::before{
@@ -117,10 +117,9 @@ iframe{
   left: 0;
   right: 0;
   width: 0;
-  transition: width 1s ease-in-out;
   background-clip: text;
   animation-name: filling;
-  animation-duration: 2s;
+  animation-duration: 3s;
   animation-fill-mode: forwards;
 }
 
@@ -129,20 +128,20 @@ iframe{
   100% {width: 100%;}
 }
 
-// @keyframes scaling {
-//   0%{
-//     transform: scale(1);
-//   }
-//   // 25%{
-//   //   transform: scale(1.5);
-//   // }
-//   // 50%{
-//   //   transform: scale(2);
-//   // }
-//   // 75%{
-//   //   transform: scale(3);
-//   // }
-//   100%{
-//     transform: scale(12) ;
-//   }
-// }
+@keyframes scaling {
+  0%{
+    transform: scale(1);
+  }
+  // 25%{
+  //   transform: scale(1.5);
+  // }
+  // 50%{
+  //   transform: scale(6) translateX(30%);
+  // }
+  // 75%{
+  //   transform: scale(3);
+  // }
+  100%{
+    transform: scale(12) translateX(40%) ;
+  }
+}
