@@ -21,7 +21,6 @@ useEffect(() => {
   const getList = async () =>{
     let response = null;
     const params = {};
-
     if(props.type !== 'similar')
     {
         switch(props.category)

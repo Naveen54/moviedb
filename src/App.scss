@@ -84,3 +84,43 @@ iframe{
   @include flex(center,space-between);
 }
 
+
+// loading icon
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.text-fill {
+  background-color: aliceblue;
+  font-size: 10vw;
+  text-transform: uppercase;
+  position: relative;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.text-fill::before{
+  content: attr(data-title);
+  background:linear-gradient(#f107ba,#155af0);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 0;
+  transition: width 1s ease-in-out;
+  background-clip: text;
+  animation-name: example;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes example {
+  from {width: 0;}
+  to {width: 100%;}
+}
