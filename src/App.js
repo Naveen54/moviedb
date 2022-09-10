@@ -15,7 +15,7 @@ const [loading,setLoading] = useState(true)
   useEffect(() => {
      const timer =  setTimeout(()=>{
             setLoading(false)
-      },3000)
+      },2000)
     return () => {
       clearTimeout(timer)
     };
@@ -26,7 +26,8 @@ const [loading,setLoading] = useState(true)
 <div className='text-fill' data-title='Naveen'>
 Naveen
 </div>
-    </div>:
+    </div>
+    :
     <BrowserRouter>
     <Header/>
     <AppRoutes/>
