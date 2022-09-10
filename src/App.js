@@ -22,7 +22,7 @@ const [loading,setLoading] = useState(true)
   }, []);
   return (
     loading?
-    <div className='container'>
+    <div className='loading-container'>
 <div className='text-fill' data-title='Naveen'>
 Naveen
 </div>
